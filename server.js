@@ -2,7 +2,7 @@
 var express = require("express");
 const { dirname } = require("path");
 var app = express()
-const PORT = 3000;
+var PORT = process.env.PORT || 3000;
 var logged = false
 var istnieje = false
 var bodyParser = require("body-parser");
